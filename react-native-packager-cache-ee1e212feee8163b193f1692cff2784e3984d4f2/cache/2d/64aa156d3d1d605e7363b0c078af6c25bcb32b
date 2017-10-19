@@ -1,0 +1,101 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+var _jsxFileName = '/home/dhihan/AwesomeProject/App.js';
+
+var _react = require('react');
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require('react-native');
+
+var App = function (_React$Component) {
+  babelHelpers.inherits(App, _React$Component);
+
+  function App() {
+    babelHelpers.classCallCheck(this, App);
+    return babelHelpers.possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(App, [{
+    key: 'render',
+    value: function render() {
+      var dataDiri = {
+        nama: 'Dhihan Laksana Aji Anggana',
+        batch: '#1'
+      };
+      var foto = {
+        uri: 'http://lh3.googleusercontent.com/-6f6paMaVF64/AAAAAAAAAAI/AAAAAAAAAiA/czvGPXSoju4/s128-c0x00000000-cc-rp-mo/photo.jpg'
+      };
+      return _react2.default.createElement(
+        _reactNative.View,
+        { style: styles.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          }
+        },
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          },
+          'Nama: '
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          { style: styles.content, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            }
+          },
+          dataDiri.nama
+        ),
+        _react2.default.createElement(_reactNative.Image, { source: foto, style: { height: '30%', width: '55%' }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19
+          }
+        }),
+        _react2.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 20
+            }
+          },
+          'Batch:'
+        ),
+        _react2.default.createElement(
+          _reactNative.Text,
+          { style: styles.content, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          dataDiri.batch
+        )
+      );
+    }
+  }]);
+  return App;
+}(_react2.default.Component);
+
+exports.default = App;
+
+
+var styles = _reactNative.StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  content: {
+    fontSize: 20,
+    fontWeight: 'bold'
+  }
+});
