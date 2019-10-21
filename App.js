@@ -6,8 +6,8 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default class App extends React.Component {
   render() {
     let dataDiri = {
-      nama: 'Dhihan',
-      batch : '#1'
+      nama: 'Citra Putri',
+      batch : '#9'
     };
     let foto = {
       uri: 'http://lh3.googleusercontent.com/-6f6paMaVF64/AAAAAAAAAAI/AAAAAAAAAiA/czvGPXSoju4/s128-c0x00000000-cc-rp-mo/photo.jpg'
